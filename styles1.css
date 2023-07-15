@@ -1,0 +1,76 @@
+.calculator {
+  max-width: 300px;
+  margin: 0 auto;
+  margin-top: 50px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9f9f9;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.result {
+  margin-bottom: 20px;
+}
+
+.input-container {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#resultInput {
+  width: 100%;
+  font-size: 32px;
+  padding: 8px;
+  border: none;
+  text-align: right;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.button {
+  width: 60px;
+  height: 60px;
+  margin: 8px;
+  font-size: 24px;
+  border-radius: 50%;
+  border: none;
+  color: #fff;
+  background-color: #4caf50;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.button:hover {
+  background-color: #45a049;
+}
+
+.button.operation {
+  background-color: #2196f3;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button.operation:hover {
+  background-color: #1e87f0;
+}
+
+.button.equal {
+  background-color: #ff9800;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.button.equal:hover {
+  background-color: #f57c00;
+}
+
+.memory-buttons {
+  margin-top: 10px;
+}
+
+.memory-buttons button {
+  margin: 5px;
+}

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles1.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="calculator">
+        <h2>Calculator</h2>
+        <div class="result">
+          <input type="text" id="resultInput" disabled />
+        </div>
+        <div class="button-container">
+          <button class="button number" onclick="handleClick('7')">7</button>
+          <button class="button number" onclick="handleClick('8')">8</button>
+          <button class="button number" onclick="handleClick('9')">9</button>
+          <button class="button operation" onclick="handleClick('+')">+</button>
+          <button class="button number" onclick="handleClick('4')">4</button>
+          <button class="button number" onclick="handleClick('5')">5</button>
+          <button class="button number" onclick="handleClick('6')">6</button>
+          <button class="button operation" onclick="handleClick('-')">-</button>
+          <button class="button number" onclick="handleClick('1')">1</button>
+          <button class="button number" onclick="handleClick('2')">2</button>
+          <button class="button number" onclick="handleClick('3')">3</button>
+          <button class="button operation" onclick="handleClick('*')">*</button>
+          <button class="button number" onclick="handleClick('0')">0</button>
+          <button class="button" onclick="handleClick('.')">.</button>
+          <button class="button operation" onclick="handleClick('/')">/</button>
+          <button class="button equal" onclick="calculate()">=</button>
+        </div>
+        <div class="memory-buttons">
+          <button class="btn btn-primary" onclick="addToMemory()">M+</button>
+          <button class="btn btn-primary" onclick="subtractFromMemory()">
+            M-
+          </button>
+          <button class="btn btn-primary" onclick="clearMemory()">MC</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script1.js"></script>
+  </body>
+</html>
